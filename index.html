@@ -17,13 +17,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 
+<!-- bootstrap -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+
+
+<!-- ANIMATE CSS -->
+
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 <!-- custom css -->
 <link rel="stylesheet" href="./Assets/CSS/styles.css">
 
 </head>
 <body>
 
-<header class="liany-header">
+<header class="container liany-header">
+
     <div class="liany-logo">
         <a href="./index.html"><img class="logo-image" src="./Assets/Images/logo.png" alt="logo of liany media company"></a>
     </div>
@@ -43,24 +57,251 @@
       </div>
         <div class="booking">
             <button type="submit" class="btn" id="book-btn">BOOKING</button>
-            <a href=""><p><i class="fas fa-phone"></i> +1 602 577 0325</p></a>
+            <a href="tel:+16025770325" class="phone-link">
+        <p><i class="fas fa-phone"></i> +1 602 577 0325</p>
+    </a>
         </div>
+          <div class="toggling">
+
+      <button class="menu-display" id="btn-menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+
+    
 </header>
+
+      <div class="liany-menu-side">
+         <div class="liany-logo logo-side">
+           <button class="close-btn" ><i class="fa-solid fa-square-xmark"></i></button> 
+        <a href="./index.html"><img class="logo-image" src="./Assets/Images/logo.png" alt="logo of liany media company"></a>
+
+          <div class="booking-side">
+              <button type="submit" class="btn-side" id="book-btn">BOOKING</button>  
+          </div>
+        </div>
+
+        <nav class="liany-menu-navbar side">
+            <ul>
+                <a href="#"><li>HOME</li></a>
+                 <a href="#"><li>ABOUT US</li></a>
+                   <a href="#"><li>SERVICES</li></a>
+
+                  <a href="#"><li>GALLELY</li></a>
+                  <a href="#" ><li>CONTACT </li></a> 
+            </ul>
+
+
+            
+      </div>
+
 <!-- end of header -->
+
+
+
 
 
 <main>
     <section class="landing-page">
-        <div class="overlays"></div>
+    
+
+        <h2 class="animate__animated animate__bounce landing-header">Business Class Conference Room
+          <br>
+          <p class="headerp">Atmosphere that encourages open dialogue,</p>
+        </h2>
+
+        <div class="promotion">
+           <p class="countdown"></p>
+           <h2>50% off NOW</h2>
+        </div>
+
     </section>
-    <section></section>
-    <section></section>
+
+
+ <section id="about">
+    <div class="container about-section">
+        <div class="row align-items-center content">
+            <div class="col-12 col-lg-6 text-content">
+                <h3>ABOUT US</h3>
+                <p>
+                    <em>Liany Media Conference Room</em> is a state-of-the-art facility located in the heart of Phoenix, Arizona. Designed to cater to all your modern conferencing needs, our venue is equipped with the latest technology and amenities to ensure productive and successful meetings.
+                    <br><br>
+                    Our conference room features advanced audiovisual systems, high-speed internet, and ergonomic furniture, creating an environment conducive to effective communication and collaboration. Whether you're hosting a business meeting, a workshop, or a seminar, our space provides the ideal setting for fruitful discussions and creative brainstorming.
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 image-content">
+                <img src="./Assets/Images/1-16.jpg" alt="Image of the conference room" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section id="services" class="services-section">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="row services-cards">
+            <div class="col-lg-4 col-md-6 col-sm-12 service-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Video Live Streaming</h5>
+                        <p class="card-text">Stream your meetings in real-time to remote attendees anywhere in the world with our high-quality live streaming services. Ensure no one misses out, regardless of their location.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Video and Audio Recording</h5>
+                        <p class="card-text">Capture every moment of your meeting with our professional video and audio recording services. Perfect for creating an archive of your event or for sharing with those who couldn't attend.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Video Coverage</h5>
+                        <p class="card-text">Our team provides comprehensive video coverage of your event, capturing key moments, presentations, and interactions. This service ensures you have a detailed visual record of the proceedings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Interpretation Services</h5>
+                        <p class="card-text">We offer professional interpretation services to accommodate multi-lingual participants, ensuring clear and effective communication across language barriers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Event Photography</h5>
+                        <p class="card-text">Preserve the highlights of your meeting with our expert photography services. Our photographers are skilled in capturing both candid and posed shots, ensuring a complete visual narrative of your event.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projection Services</h5>
+                        <p class="card-text">Utilize our advanced projection equipment for your presentations. Our high-definition projectors and large screens ensure that your visuals are clear and impactful, enhancing the overall experience for your attendees.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Branding</h5>
+                        <p class="card-text">We offer customized branding solutions to align the meeting room with your company’s image. This includes branded materials, signage, and digital displays to reinforce your brand identity throughout the event.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Free WiFi</h5>
+                        <p class="card-text">Enjoy complimentary high-speed WiFi access throughout our conference room to keep you connected and productive during your meetings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="gallery" class="gallery-section">
+    <div class="container gallery-container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./Assets/Images/1.jpg" alt="image of liany conference room">
+            </div>
+            <div class="gallery-item">
+                <img src="./Assets/Images/1-9.jpg" alt="image of liany conference room">
+            </div>
+            <div class="gallery-item">
+                <img src="./Assets/Images/1-6.jpg" alt="image of liany conference room">
+            </div>
+            <div class="gallery-item">
+                <img src="./Assets/Images/1-4.jpg" alt="image of liany conference room">
+            </div>
+            <div class="gallery-item">
+                <img src="./Assets/Images/1-28.jpg" alt="image of liany conference room">
+            </div>
+            <div class="gallery-item">
+                <img src="./Assets/Images/1-15.jpg" alt="image of liany conference room">
+            </div>
+            <div class="gallery-item">
+                <img src="./Assets/Images/a-1.jpg" alt="image of liany conference room">
+            </div>
+            <div class="gallery-item">
+                <img src="./Assets/Images/a-20.jpg" alt="image of liany conference room">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Modal for enlarged image -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+
+
+
+<section id="contact-form">
+
+</section>
+
+
+<section id="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+    <div id="successMessage" style="display: none;">Message sent successfully!</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 </main>
 
 
 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
-    
+  <script src="./Assets/JS/index.js"></script>  
 </body>
 </html>
